@@ -1,6 +1,6 @@
 !<!DOCTYPE html>
 <html>
-<head>
+<!--<head>
   <title>Employee Database</title>
 </head>
 
@@ -23,9 +23,25 @@
   <!-- insert table with employee id and info -->
 <!--<a href="employee.sql"> Table </a> -->
 
-
-</body>
+<!--
+</body> -->
 <head>
+  <title>Employee Database</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="employee.js"></script>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+   <link rel="stylesheet" type="text/css" href="home_style.css">
+   <nav>
+       <div class="nav-wrapper">
+         <a href="#" class="brand-logo center">Erin Bouton's Employee Database </a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="employee.sql" <Database> </a></li>
+          </ul>
+       </div>
+   </nav>
 	<style type="text/css">
 		th, td {
 			border: 1px solid #CCCCCC;
@@ -34,25 +50,53 @@
 	</style>
 </head>
 <body>
-	<table>
-		<caption class="description">Table 1. Sales Data of Electronics Division</caption>
+
+	<table id="myTable">
 		<thead>
 			<tr>
-				<th>No</th>
-				<th>Customer</th>
-				<th>Item</th>
-				<th>Date</th>
-				<th>Amount</th>
+				<th>Employee ID</th>
+				<th>Last Name</th>
+				<th>First Name</th>
+				<th>Date of Birth</th>
+				<th>Social Security Number</th>
+        <th>Hire Date</th>
+        <th>Gender</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Street address </th>
+        <th>City</th>
+        <th>State abbreviation </th>
+        <th>Zipcode</th>
+        <th>Country</th>
+        <th>Annual Salary
+        <th>Hourly Rate </th>
+        <th>Weekly Rate</th>
+        <th>Quarterly Rate</th>
+        <th>From Date</th>
+        <th>To Date</th>
+        <th>Overtime Salary</th>
+        <th>Department Number</th>
+        <th>Department Name</th>
+        <th>Employee Title</th>
+
+
 			</tr>
 		</thead>
 		<tbody>
-			<tr>
-				<td>1</td>
-				<td>Anthony</td>
-				<td>Television</td>
-				<td>September 07, 2016</td>
-				<td>250</td>
-			</tr>
+      <script>
+         function new_row() {
+                var tr = document.createElement("tr");
+                var td = document.createElement("td");
+                var txt = document.createElement("INPUT")
+                txt.setAttribute("type","text")
+                tr.appendChild(th);
+        }
+      </script>
+      <button type="button" onclick="new_row()">New Employee</button>
+		<!--	<tr>
+
+
+		</tr>
 			<tr>
 				<td>2</td>
 				<td>Bryan</td>
@@ -81,6 +125,20 @@
 				<td>Oktober 11, 2016</td>
 				<td>45</td>
 			</tr>
+      <tr>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>9</td>
+      </tr> -->
+
+
 		</tbody>
 		<tfoot>
 			<tr>
@@ -89,6 +147,7 @@
 			</tr>
 		</tfoot>
 	</table>
+
 </body>
 
 
