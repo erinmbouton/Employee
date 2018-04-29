@@ -1,34 +1,11 @@
-!<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<!--<head>
-  <title>Employee Database</title>
-</head>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
- <link rel="stylesheet" type="text/css" href="home_style.css">
-
-<body>
-  <nav>
-      <div class="nav-wrapper">
-        <a href="#" class="brand-logo center">Erin's Employee Database </a>
-         <ul id="nav-mobile" class="left hide-on-med-and-down">
-           <li><a href="employee.sql" <Database> </a></li>
-         </ul>
-      </div>
-  </nav>
-  <!-- insert table with employee id and info -->
-<!--<a href="employee.sql"> Table </a> -->
-
-<!--
-</body> -->
 <head>
   <title>Employee Database</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="employee.js"></script>
+  <script src="Connector.php"></script>
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -50,6 +27,7 @@
 	</style>
 </head>
 <body>
+
 
 	<table id="myTable">
 		<thead>
@@ -87,65 +65,16 @@
          function new_row() {
                 var tr = document.createElement("tr");
                 var td = document.createElement("td");
-                var txt = document.createElement("INPUT")
+                var txt = document.createElement("INPUT");
                 txt.setAttribute("type","text")
-                tr.appendChild(th);
+                tr.appendChild(td)
         }
       </script>
       <button type="button" onclick="new_row()">New Employee</button>
-		<!--	<tr>
 
-
-		</tr>
-			<tr>
-				<td>2</td>
-				<td>Bryan</td>
-				<td>Washing Machine</td>
-				<td>July 10, 2016</td>
-				<td>150</td>
-			</tr>
-			<tr>
-				<td>3</td>
-				<td>Cherly</td>
-				<td>Water Dispenser</td>
-				<td>August 11, 2016</td>
-				<td>95</td>
-			</tr>
-			<tr>
-				<td>4</td>
-				<td>Dean</td>
-				<td>Refrigerator</td>
-				<td>September 15, 2016</td>
-				<td>175</td>
-			</tr>
-			<tr>
-				<td>5</td>
-				<td>Esryl</td>
-				<td>Wall Fan</td>
-				<td>Oktober 11, 2016</td>
-				<td>45</td>
-			</tr>
-      <tr>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>7</td>
-      </tr>
-      <tr>
-        <td>8</td>
-      </tr>
-      <tr>
-        <td>9</td>
-      </tr> -->
 
 
 		</tbody>
-		<tfoot>
-			<tr>
-				<th colspan="4">Total</th>
-				<th>7.150.000</th>
-			</tr>
-		</tfoot>
 	</table>
 
 </body>

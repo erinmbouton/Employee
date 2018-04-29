@@ -1,27 +1,27 @@
 CREATE DATABASE employee;
 
 CREATE Table employeeid (
-  Employee_ID int,
+  Employee_ID INT(100),
+  Last_Name TEXT,
+  First_Name TEXT,
   Date_of_Birth DATE,
   Social_Security_Number TEXT,
   Hire_Date DATE,
   Gender TEXT,
-  Phone_Number TEXT,
+  Phone_Number INT(11),
   Email_Address TEXT,
   Street_Address TEXT,
   Zipcode VARCHAR(5),
   City TEXT,
   State VARCHAR(5),
   Country TEXT,
-  Annual_Salary TEXT,
-  Hourly_Rate TEXT,
-  Weekly_Rate TEXT,
-  Quarterly_Rate TEXT,
+  Annual_Salary INT(9),
+  Hourly_Rate INT(6),
+  Weekly_Rate INT(9),
+  Quarterly_Rate INT(9),
   From_Date DATE,
   To_Date DATE,
-  Overtime TEXT,
-  Department_Number int,
+  Overtime_Salary INT(9),
+  Department_Number INT(100),
   Department_Name TEXT,
   Employee_Title TEXT);
-  
-  

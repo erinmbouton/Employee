@@ -3,5 +3,5 @@ function new_row() {
        var td = document.createElement("td");
        var txt = document.createElement("INPUT")
        txt.setAttribute("type","text")
-       tr.appendChild(th);
+       tr.appendChild(td);
 }
